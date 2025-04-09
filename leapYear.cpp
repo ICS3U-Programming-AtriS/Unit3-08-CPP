@@ -12,13 +12,13 @@
 
 int main() {
     // Get the year as a string
-    std::string year_as_string;
+    std::string yearAsString;
     std::cout << "Enter a year: ";
-    std::getline(std::cin, year_as_string);
+    std::getline(std::cin, yearAsString);
 
     try {
         // Convert the year input to an integer
-        int year = std::stoi(year_as_string);
+        int year = std::stoi(yearAsString);
 
         // Check if the year is positive
         if (year > 0) {
@@ -54,7 +54,7 @@ int main() {
         }
     } catch (std::invalid_argument) {
         // Tell the user that their input wasn't an integer
-        std::cout << year_as_string;
+        std::cout << yearAsString;
         std::cout << " is not an integer.\n";
     }
     // Program completion message
